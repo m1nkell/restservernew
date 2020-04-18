@@ -12,13 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-<<<<<<< HEAD
-app.use(require('./routes/usuario'));
-=======
 
 //Configuracion global de rutas
 app.use(require('./routes/index'));
->>>>>>> Login de la seccion 10
 
  mongoose.connect(process.env.URLDB,
                                 { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
