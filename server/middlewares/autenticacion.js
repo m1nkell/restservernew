@@ -38,7 +38,7 @@ let verificaRole = (req, res, next) => {
         return res.status(401).json({
             ok: false,
             err: {
-                message: "Usted no dispone de privilegios de administrador."
+                message: "Usted no dispone de privilegios de admin."
             }
         });
     }
